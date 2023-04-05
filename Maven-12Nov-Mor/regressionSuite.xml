@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1234" thread-count="2" parallel = "tests" >
+
+  <test name="ChromeTest" thread-count="2" parallel = "classes">
+  	<parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNgpack.VerifyForgotPasswordPage"/>
+      <class name="testNgpack.VerifySignUPPage"/>
+    </classes>
+  </test> <!-- Test1 -->
+  
+  <test name="FirefoxTest" thread-count="2"  parallel = "classes">
+  	<parameter name="browser" value="gghjgjkhlkjbirefox"/>
+    <classes>
+      <class name="testNgpack.VerifyForgotPasswordPage"/>
+      <class name="testNgpack.VerifySignUPPage"/>
+    </classes>
+  </test> <!-- Test1 -->
+  
+</suite> <!-- Suite -->
