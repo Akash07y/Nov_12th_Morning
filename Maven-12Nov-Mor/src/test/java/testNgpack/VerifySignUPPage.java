@@ -46,6 +46,11 @@ public class VerifySignUPPage extends Base  {
 			driver = openOperaBrowser();
 		}
 		
+		if(browserName.equals("Safari"))
+		{
+			driver = openOperaBrowser();
+		}
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS) ;	
 	}
