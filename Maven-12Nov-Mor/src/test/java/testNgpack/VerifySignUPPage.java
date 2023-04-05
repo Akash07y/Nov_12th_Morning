@@ -52,7 +52,13 @@ public class VerifySignUPPage extends Base  {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS) ;	
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS) ;
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS) ;
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS) ;
 	}
 	
 	@BeforeClass
