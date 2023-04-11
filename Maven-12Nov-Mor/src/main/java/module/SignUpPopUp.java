@@ -57,7 +57,7 @@ public class SignUpPopUp {
 			//Actions action = new Actions(driver);
 			
 			//WebDriverWait wait = new WebDriverWait(driver, 20) ;  // 20Sec
-			wait = new WebDriverWait(driver, 20) ;
+			wait = new WebDriverWait(driver, 30) ;
 			wait.until(ExpectedConditions.visibilityOf(custom));
 			javascriptExecutor.executeScript("arguments[0].scrillIntoView(true);", custom);
 			javascriptExecutor.executeScript("window.scrollBy(0,-50)");
@@ -71,7 +71,9 @@ public class SignUpPopUp {
 			wait.until(ExpectedConditions.visibilityOf(dayOfBirth));
 			
 			Select select = new Select(dayOfBirth);
-			select.selectByVisibleText("2");	
+			// text "2" is not present now so using select by index
+			//select.selectByVisibleText("2"); 
+			select.selectByIndex(2);
 		}
 		
 		public void selectMonthOfBirth() {
