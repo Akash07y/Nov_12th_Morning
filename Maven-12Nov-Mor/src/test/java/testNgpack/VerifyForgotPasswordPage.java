@@ -34,8 +34,10 @@ public class VerifyForgotPasswordPage extends Base{
 	public void openBrowser(String browserName) {
 		System.out.println("Before Test");
 		
-		if(browserName.equals("Chrome"))
+		//if(browserName.equals("Chrome"))
 		{
+			driver = openChromeBrowser();
+			driver = openChromeBrowser();
 			driver = openChromeBrowser();
 		}
 		
