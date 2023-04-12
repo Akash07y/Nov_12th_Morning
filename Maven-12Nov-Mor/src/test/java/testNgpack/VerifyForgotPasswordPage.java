@@ -53,6 +53,18 @@ public class VerifyForgotPasswordPage extends Base{
 	}
 	
 	@BeforeClass
+	public void creatPOMObject1234() {
+// 		loginPage = new LoginPage(driver) ;
+// 		forgotPasswordPage= new ForgotPasswordPage(driver);
+		
+// 		//String data = Utility.getExcelData("TestData", 2, 0);
+// 		loginPage.sendUserName(Utility.getExcelData("TestData", 2, 0));
+		
+// 		//data = Utility.getExcelData("TestData", 2, 1);
+// 		loginPage.sendPassword(Utility.getExcelData("TestData", 2, 1));
+	}
+	
+	@BeforeClass
 	public void creatPOMObject() {
 		loginPage = new LoginPage(driver) ;
 		forgotPasswordPage= new ForgotPasswordPage(driver);
