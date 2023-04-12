@@ -36,9 +36,7 @@ public class VerifyForgotPasswordPage extends Base{
 		
 		//if(browserName.equals("Chrome"))
 		{
-			driver = openChromeBrowser();
-			driver = openChromeBrowser();
-			driver = openChromeBrowser();
+			driver = openFirefoxBrowser();
 		}
 		
 		if(browserName.equals("Firefox"))
