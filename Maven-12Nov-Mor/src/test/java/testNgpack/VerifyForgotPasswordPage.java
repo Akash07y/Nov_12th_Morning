@@ -52,6 +52,13 @@ public class VerifyForgotPasswordPage extends Base{
 		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS) ;	
 	}
 	
+	@BeforeMethod
+	public void goToForgotPasswordPage44644() {
+		System.out.println("Before Method");
+		driver.get("https://www.facebook.com/");
+		loginPage.clickForgotPassword()
+	}
+	
 	@BeforeClass
 	public void creatPOMObject1234() {
 // 		loginPage = new LoginPage(driver) ;
